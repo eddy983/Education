@@ -1,0 +1,76 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /* To get the pecentage 10px(wanted font) / 16px(root font) = 0.625
+  0.625 x 100 = 62.5% */
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  color: #777;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  padding: 3rem; }
+
+.heading-primary {
+  color: whitesmoke;
+  text-transform: uppercase; }
+  .heading-primary--main {
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    color: whitesmoke;
+    display: block;
+    font-size: 10rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    text-align: center; }
+  .heading-primary--sub {
+    animation: moveInRight 2s ease-out;
+    color: whitesmoke;
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.8rem;
+    text-align: center; }
+
+.header {
+  background-image: linear-gradient(to right bottom, rgba(204, 102, 153, 0.8), rgba(179, 115, 153, 0.8)), url(../img/BG-image5.jpg);
+  background-position: top;
+  background-size: cover;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  height: 95vh; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }

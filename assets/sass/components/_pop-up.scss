@@ -1,0 +1,48 @@
+.pop-up {
+  background-color: rgba($color-black, 0.64);
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+  z-index: 9999;
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__content {
+    @include position;
+    background-color: $color-white;
+    padding: 3%;
+    width: 50%;
+
+    @include respond(tab-land) {
+      width: 70%;
+    }
+
+    @include respond(mic-l) {
+      width: 88%;
+    }
+
+    @include respond(l-phone) {
+      width: 98%;
+    }
+  }
+
+  &__close {
+    left: 97%;
+    position: absolute;
+    top: 3%;
+    transform: translate(-50%, -50%);
+
+    &__icon {
+      color: $color-black;
+      font-size: 2rem;
+    }
+  }
+}
+

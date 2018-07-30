@@ -1,0 +1,43 @@
+.pagination {
+  display: inline-block;
+  padding: 8rem 0 4rem 0;
+
+  &__item {
+    background-color: white;
+    border: none;
+    color: $color-black;
+    float: left;
+    outline: 0;
+    padding: 1rem 1.6rem;
+    text-decoration: none;
+
+    &:active,
+    &:hover,
+    &::selection {
+      background-color: $color-secondary;
+      color: $color-white;
+      border-radius: 0.8rem;
+    }
+
+    &--word {
+
+      &:focus {
+        outline: 0;
+      }
+
+      &:hover {
+        background-color: transparent;
+        color: $color-secondary;
+      }
+    }
+  }
+}
+
+.actives {
+  background-color: $color-secondary;
+  border-radius: 0.8rem;
+  color: $color-white; 
+  &:focus {
+    outline: 0;
+  }
+}

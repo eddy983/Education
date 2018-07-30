@@ -1,0 +1,15 @@
+.reports {
+  @include margin;
+  display: grid;
+  grid-gap: 3%;
+  grid-template-columns: 2fr 1fr;
+
+  @include respond(tab-land) {
+    @include responsive-margin;
+  }
+
+  @include respond(mic-l) {
+    grid-template-columns: 1fr;
+  }
+
+}

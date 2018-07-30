@@ -1,0 +1,8 @@
+.line {
+  border-bottom: 1px solid #000;
+  margin: 3% 54px;
+
+  @include respond(tab-land) {
+    margin: 3% 20px;
+  }
+}

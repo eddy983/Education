@@ -1,0 +1,135 @@
+.view-report {
+  display: grid;
+  grid-gap: 1%;
+  grid-template-areas: 'main main main other';
+  padding: 0px 54px;
+  width: 100%;
+
+  @include respond(tab-land) {
+    grid-template-areas: 
+    'main'
+    'other';
+    padding: 0px 30px;
+  }
+
+  @include respond(f-hxd) {
+    padding: 0 20px;
+  }
+
+  &__main {
+    grid-area: main;
+    padding: 3%;
+
+    @include respond(tab-land) {
+      padding: 3% 0;
+    }
+  }
+
+  &__other {
+    background-color: #EFEFEF;
+    grid-area: other;
+    padding: 8% 8%;
+
+    @include respond(tab-land) {
+      background-color: transparent;
+      padding: 0;
+    }
+
+    &__boxes {
+
+      @include respond(tab-land) {
+        @include grid;
+        grid-gap: 3%;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+
+      @include respond(l-phone) {
+        grid-template-columns: repeat(auto-fit, minmax(121px, 1fr));
+      }
+    }
+
+    &__box {
+      margin-bottom: 6%;
+    }
+  }
+
+  &__image {
+    object-fit: cover;
+    width: 100%; 
+
+    &--main {
+      height: 48vh;
+
+      @include respond(tab-land) {
+        height: 28vh;
+      }
+    }
+
+    &--officials {
+      height: 20vh;
+
+      @include respond(tab-land) {
+        height: 14vh;
+      }
+
+      @include respond(f-hxd) {
+        height: 20vh;
+      }
+    }
+
+    &--other {
+      height: 20vh;
+    }
+
+    &--pictures {
+      margin-bottom: 6%;
+    }
+  }
+
+  &__officials {
+    display: grid;
+    grid-gap: 3%;
+    grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+
+    @include respond(f-hxd) {
+      grid-template-columns: repeat(auto-fit, minmax(261px, 1fr));
+    }
+
+    @include respond(l-phone) {
+      grid-template-columns: repeat(auto-fit, minmax(121px, 1fr));
+    }
+
+    &__box {
+      position: relative;
+      margin-bottom: 8%;
+
+      &__name {
+        background-color: $black-background-color;
+      }
+
+      &__text {
+        padding: 0.2rem 0;
+      }
+    }
+  }
+
+  &__pictures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(131px, 1fr));
+    grid-gap: 3%; 
+    margin-bottom: 3%;
+
+    @include respond(tab-land) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    @include respond(l-phone) {
+      grid-template-columns: repeat(auto-fit, minmax(121px, 1fr));
+    }
+  }
+
+  &__socia-media {
+    height: 4rem;
+    margin-right: 1%;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "education",
+  "version": "1.0.0",
+  "description": "A website to see educational injustice",
+  "main": "index.html",
+  "scripts": {
+    "watch:sass": "node-sass assets/sass/main.scss assets/css/main.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all  --parallel devserver watch:sass",
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/main.comp.css",
+    "concat:css": "concat -o assets/css/main.concat.css assets/css/main.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" assets/css/main.concat.css -o assets/css/main.prefix.css",
+    "compress:css": "node-sass assets/css/main.prefix.css assets/css/main.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+  },
+  "author": "Isong Edidiong",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.6.5",
+    "bootstrap": "^4.1.2",
+    "concat": "^1.0.3",
+    "node-sass": "^4.9.0",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^5.0.1"
+  }
+}

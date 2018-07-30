@@ -1,0 +1,56 @@
+.news-report {
+  &__header {
+    background-color: #c4c4c4;
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding: 10px;
+  }
+
+  &__first-report {
+    @include grid;
+    margin: 2% 0;
+    grid-gap: 3%;
+    grid-template-columns: repeat(2, 1fr);    
+
+    
+
+    @include respond(l-phone) {
+      grid-gap: 10px;
+    }
+  }
+
+  &__link {
+    color: $color-secondary;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__image {
+    height: 28rem;
+    object-fit: cover;
+    width: 100%;
+
+    @include respond(l-phone) {
+      height: 100%;
+    }
+
+    &--other {
+      height: 12rem;
+    }
+  }
+
+  &__other-report {
+    @include grid;
+
+    grid-gap: 3%;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include respond(mic-l) {
+      //grid-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

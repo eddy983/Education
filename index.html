@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootsrtrap CDM -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+  <!-- Normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/plug-ins/css/fontawesome/fontawesome.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open Sans:100,300,400,700,900" rel="stylesheet">
+
+  <!-- Select2 -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css'>
+
+  <!-- Select2 Bootstrap -->
+  <link rel='stylesheet' href='https://select2.github.io/select2-bootstrap-theme/css/select2-bootstrap.css'>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <title>Education</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__responsive-nav">
+      <!-- overlay -->
+      <div id="search">
+        <a href="#" id="close-btn">
+          <em class="fa fa-times"></em>
+        </a>
+        <input placeholder="type here" id="searchbox" type="search" />
+      </div>
+      <!--- /overlay -->
+      <nav class="nav">
+        <a href="#">
+
+          <img src="assets/img/menu.svg" alt="" class="nav__burger">
+
+        </a>
+        <input type="checkbox" class="nav__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="nav__button">Men</label>
+
+        <div class="nav__background">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link nav-font">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="report.html" class="nav__link nav-font">Reports</a>
+            </li>
+            <li class="nav__item">
+              <a href="champions.html" class="nav__link nav-font">champions</a>
+            </li>
+            <li class="nav__item">
+              <a href="#pop-up" class="btn btn__nav nav-font">Submit Report</a>
+            </li>
+
+        </div>
+
+        <!-- trigger search with a link to an anchor -->
+        <a class="fr nav__search-btn" href='#search'>
+          <em class="fa fa-search"></em>
+        </a>
+        <!-- /trigger search with a link to an anchor -->
+
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header__nav-bar">
+      <div class="nav-bar">
+        <ul class="nav-bar__list">
+          <li class="nav-bar__item">
+            <a href="index.html" class="nav-bar__name">Home</a>
+          </li>
+          <li class="nav-bar__item">
+            <a href="report.html" class="nav-bar__name">Reports</a>
+          </li>
+          <li class="nav-bar__item">
+            <a href="champions.html" class="nav-bar__name">Champions</a>
+          </li>
+          <li class="nav-bar__item nav-bar__item__submit">
+            <a href="#pop-up" class="btn btn__submit" class="nav-bar__item">Submit Report</a>
+          </li>
+          <li class="nav-bar__item nav-bar__item__search">
+            <div class="nav-bar__search">
+              <span class="fa fa-search nav-bar__search__icon"></span>
+              <input type="text" class="nav-bar__search__input" placeholder="Search" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel">
+            <div class="carousel__container">
+              <h1 class="carousel__text">
+                <span class="carousel__text__inner">Become an education champion</span>
+                <span class="carousel__text__inner">today by submitting a report</span>
+              </h1>
+              <div class="carousel__buttons">
+                <a href="#pop-up" class="btn btn__carousel">Submit Report</a>
+                <a href="champions.html" class="btn btn__carousel btn__carousel--champions">See all champions</a>
+              </div>
+              <img src="assets/img/class.jpg" alt="image" class="carousel__image">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel">
+            <div class="carousel__container">
+              <h1 class="carousel__text">
+                <span class="carousel__text__inner">Change the future</span>
+                <span class="carousel__text__inner">today by submitting a report</span>
+              </h1>
+              <img src="assets/img/classroom2.jpg" alt="image" class="carousel__image">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel">
+            <div class="carousel__container">
+              <h1 class="carousel__text">
+                <span class="carousel__text__inner">Become an education champion</span>
+                <span class="carousel__text__inner">today by submitting a report</span>
+              </h1>
+              <img src="assets/img/classroom1.jpg" alt="image" class="carousel__image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/img/class.jpg" alt="image" class="carousel__respond__image">
+
+  </header>
+
+  <!-- Facts -->
+  <section class="facts">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h5 class="center-text facts-font-title">Facts</h5>
+          <p class="facts-font-quote facts__quote facts__quote-left">&quot;</p>
+          <p class="facts__text">
+            Time means a lot to me because, you see, I, too, am also a learner and am often lost in the joy of forever developing and
+            simplifying. If you love life, don’t waste time, for time is what life is made up of. Bruce LeeTime means a lot
+            to me because, you see, I, too, am also a learner and am often lost in the joy of forever developing and simplifying.
+            If you love life, don’t waste time, for time is what life is made up of.
+          </p>
+          <p class="facts-font-quote facts__quote facts__quote-right">&quot;</p>
+        </div>
+        <div class="carousel-item">
+          <h5 class="center-text facts-font-title">Quote</h5>
+          <p class="facts-font-quote facts__quote facts__quote-left">&quot;</p>
+          <p class="facts__text">
+            Time means a lot to me because, you see, I, too, am also a learner and am often lost in the joy of forever developing and
+            simplifying. If you love life, don’t waste time, for time is what life is made up of. Bruce LeeTime means a lot
+            to me because, you see, I, too, am also a learner and am often lost in the joy of forever developing and simplifying.
+            If you love life, don’t waste time, for time is what life is made up of.
+          </p>
+          <p class="facts-font-quote facts__quote facts__quote-right">&quot;</p>
+        </div>
+        <div class="carousel-item">
+          <h5 class="center-text facts-font-title">Statistics</h5>
+          <p class="facts-font-quote facts__quote facts__quote-left">&quot;</p>
+          <p class="facts__text">
+            Time means a lot to me because, you see, I, too, am also a learner and am often lost in the joy of forever developing and
+            simplifying. If you love life, don’t waste time, for time is what life is made up of. Bruce LeeTime means a lot
+            to me because, you see, I, too, am also a learner and am often lost in the joy of forever developing and simplifying.
+            If you love life, don’t waste time, for time is what life is made up of.
+          </p>
+          <p class="facts-font-quote facts__quote facts__quote-right">&quot;</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resopnsive Fact -->
+    <div class="facts__responsive">
+      <h5 class="center-text facts-font-title">Facts</h5>
+      <p class="facts-font-quote facts__quote facts__quote-left">&quot;</p>
+      <p class="facts__text">
+        Time means a lot to me because, you see, I, too, am also a learner and am often lost in the joy of forever developing and
+        simplifying. If you love life, don’t waste time, for time is what life is made up of. Bruce LeeTime means a lot to
+        me because, you see, I, too, am also a learner and am often lost in the joy of forever developing and simplifying.
+        If you love life, don’t waste time, for time is what life is made up of.
+      </p>
+      <p class="facts-font-quote facts__quote facts__quote-right">&quot;</p>
+    </div>
+
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <div class="about__card">
+      <ul class="tabs">
+        <li class="active" rel="tab1">About</li>
+        <li rel="tab2">Goals</li>
+        <li rel="tab3">Get in touch</li>
+      </ul>
+      <div class="tab_container">
+        <h3 class="d_active tab_drawer_heading" rel="tab1">About</h3>
+        <div id="tab1" class="tab_content">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+            eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
+            eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+            pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean
+            leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat
+            a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+        </div>
+        <!-- #tab1 -->
+        <h3 class="tab_drawer_heading" rel="tab2">Goal</h3>
+        <div id="tab2" class="tab_content">
+          <p>Nunc dui velit, scelerisque eu placerat volutpat, dapibus eu nisi. Vivamus eleifend vestibulum odio non vulputate.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error repudiandae odit vel. Lorem ipsum dolor sit amet
+            consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit beatae placeat eos?</p>
+        </div>
+        <!-- #tab2 -->
+        <h3 class="tab_drawer_heading" rel="tab3">Get in touch</h3>
+        <div id="tab3" class="tab_content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate id consequatur vitae culpa recusandae obcaecati,
+            dolores provident ratione quidem voluptas quisquam nemo officia animi!. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptatibus deserunt provident ducimus!</p>
+        </div>
+      </div>
+      <!-- .tab_container -->
+    </div>
+    <div class="about__video">
+      <a href="#" class="about__video__background">
+        <img src="assets/img/bad-class.jpg" alt="Bad Class" class="about__video about__video-v">
+      </a>
+      <img src="assets/img/play-button.svg" alt="play button" class="about__video about__video-play">
+    </div>
+    </div>
+  </section>
+
+  <div class="line"></div>
+
+  <section class="reports">
+    <!-- News-Report -->
+    <div class="news-report">
+      <h5 class="center-text news-report__header">News Report</h5>
+      <div class="news-report__first-report">
+        <img src="assets/img/Bad-class.jpg" alt="Bad Class" class="news-report__image">
+        <p class="news-report__first-report__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+          natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam fel...
+          <a href="view-report.html">
+            <span class="news-report__link">continue reading</span>
+          </a>
+        </p>
+      </div>
+      <div class="news-report__other-report">
+        <div class="news-report__other-report__report">
+          <img src="assets/img/grey-color.jpg" alt="news" class="news-report__image news-report__image--other">
+          <p class="other-report-font">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...
+            <a href="view-report.html">
+              <span class="news-report__link">continue reading</span>
+            </a>
+          </p>
+        </div>
+        <div class="news-report__other-report__report">
+          <img src="assets/img/grey-color.jpg" alt="news" class="news-report__image news-report__image--other">
+          <p class="other-report-font">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...
+            <a href="view-report.html">
+              <span class="news-report__link">continue reading</span>
+            </a>
+          </p>
+        </div>
+        <div class="news-report__other-report__report">
+          <img src="assets/img/grey-color.jpg" alt="news" class="news-report__image news-report__image--other">
+          <p class="other-report-font">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...
+            <a href="view-report.html">
+              <span class="news-report__link">continue reading</span>
+            </a>
+          </p>
+        </div>
+        <div class="news-report__other-report__report">
+          <img src="assets/img/grey-color.jpg" alt="news" class="news-report__image news-report__image--other">
+          <p class="other-report-font">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...
+            <a href="view-report.html">
+              <span class="news-report__link">continue reading</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Report -->
+    <div class="quick-report">
+      <!-- First-Div -->
+      <div id="First-Div">
+        <h3 class="center-text quick-title">Quick Report</h3>
+        <div class="quick-report__name">
+          <p class="quick-margin quick-font">Name of school
+            <span class="quick-sub">(All fields are compulsory)</span>
+          </p>
+          <input type="text" name="school's name" class="quick-report__input">
+        </div>
+        <div class="quick-report__dropdowns">
+          <div class="quick-report__dropdowns--drop">
+            <label class="quick-margin quick-font quick-report__dropdowns--label">State</label>
+            <select class="quick-report__dropdowns--drop-down" id="select2-single-box" name="select2-single-box" data-placeholder="Pick your choice"
+              data-tabindex="1">
+              <option></option>
+              <option value="1">First choice</option>
+              <option value="2">Second choice</option>
+              <option value="3">Third choice</option>
+              <option value="4">Fourth choice</option>
+              <option value="5">Fifth choice</option>
+              <option value="6">Sixth choice</option>
+              <option value="7">Seventh choice</option>
+              <option value="8">Eighth choice</option>
+              <option value="9">Ninth choice</option>
+            </select>
+          </div>
+          <div class="quick-report__dropdowns--drop">
+            <label class="quick-margin quick-font quick-report__dropdowns--drop">LGA</label>
+            <select class="quick-report__dropdowns--drop-down" id="select2-single-box" name="select2-single-box" data-placeholder="Pick your choice"
+              data-tabindex="1">
+              <option></option>
+              <option value="1">First </option>
+              <option value="2">Second </option>
+              <option value="3">Third </option>
+              <option value="4">Fourth </option>
+              <option value="5">Fifth </option>
+              <option value="6">Sixth </option>
+              <option value="7">Seventh </option>
+              <option value="8">Eighth </option>
+              <option value="9">Ninth </option>
+            </select>
+          </div>
+        </div>
+        <div class="quick-report__brief-description">
+          <p class="quick-margin quick-font">Brief Description</p>
+          <textarea rows="8" cols="50" class="quick-report__text-area"></textarea>
+        </div>
+        <div class="quick-report__upload">
+          <img src="assets/img/photo.svg" alt="upload" class="quick-report__upload__icon">
+          <button class="no-margin-bottom btn__upload">Upload pictures</button>
+        </div>
+        <button class="btn btn__next" onclick="showNextForm()">Next</button>
+      </div>
+      <!-- Second-Div -->
+      <div id="Second-Div">
+        <div class="quick-report__name">
+          <p class="quick-margin quick-font">Name of Champion
+            <span class="quick-sub">(All fields are compulsory)</span>
+          </p>
+          <input type="text" name="Champion's name" class="quick-report__input">
+        </div>
+        <div class="quick-report__name">
+          <p class="quick-margin quick-font">Email Address</p>
+          <input type="email" name="email" class="quick-report__input">
+        </div>
+        <div class="quick-report__name">
+          <p class="quick-margin quick-font">Phone Number</p>
+          <input type="number" name="phone number" class="quick-report__input">
+        </div>
+        <button class="btn btn__next btn__next--submit">Submit</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pop-Up -->
+  <div class="pop-up" id="pop-up">
+    <div class="pop-up__content">
+      <div class="pop-up__close">
+        <a href="#">
+          <i class="fa fa-times pop-up__close__icon"></i>
+        </a>
+      </div>
+      <h3 class="center-text quick-title">Quick Report</h3>
+      <div class="quick-report__name">
+        <p class="popup-margin quick-font">Name of Champion
+          <span class="quick-sub">(All fields are compulsory)</span>
+        </p>
+        <input type="text" name="Champion's name" class="quick-report__input">
+      </div>
+      <div class="quick-report__name">
+        <p class="popup-margin quick-font">Email Address</p>
+        <input type="email" name="email" class="quick-report__input">
+      </div>
+      <div class="quick-report__name">
+        <p class="popup-margin quick-font">Phone Number</p>
+        <input type="number" name="phone number" class="quick-report__input">
+      </div>
+      <div class="quick-report__name">
+        <p class="popup-margin quick-font">Name of school
+          <span class="quick-sub">(All fields are compulsory)</span>
+        </p>
+        <input type="text" name="school's name" class="quick-report__input">
+      </div>
+      <div class="quick-report__dropdowns">
+        <div class="quick-report__dropdowns--drop">
+          <label class="popup-margin quick-font quick-report__dropdowns--label">State</label>
+          <select class="quick-report__dropdowns--drop-down" id="select2-single-box" name="select2-single-box" data-placeholder="Pick your choice"
+            data-tabindex="1">
+            <option></option>
+            <option value="1">First choice</option>
+            <option value="2">Second choice</option>
+            <option value="3">Third choice</option>
+            <option value="4">Fourth choice</option>
+            <option value="5">Fifth choice</option>
+            <option value="6">Sixth choice</option>
+            <option value="7">Seventh choice</option>
+            <option value="8">Eighth choice</option>
+            <option value="9">Ninth choice</option>
+          </select>
+        </div>
+        <div class="quick-report__dropdowns--drop">
+          <label class="popup-margin quick-font quick-report__dropdowns--drop">LGA</label>
+          <select class="quick-report__dropdowns--drop-down" id="select2-single-box" name="select2-single-box" data-placeholder="Pick your choice"
+            data-tabindex="1">
+            <option></option>
+            <option value="1">First </option>
+            <option value="2">Second </option>
+            <option value="3">Third </option>
+            <option value="4">Fourth </option>
+            <option value="5">Fifth </option>
+            <option value="6">Sixth </option>
+            <option value="7">Seventh </option>
+            <option value="8">Eighth </option>
+            <option value="9">Ninth </option>
+          </select>
+        </div>
+      </div>
+      <div class="quick-report__brief-description">
+        <p class="popup-margin quick-font">Brief Description</p>
+        <textarea rows="8" cols="50" class="quick-report__text-area"></textarea>
+      </div>
+      <div class="quick-report__upload">
+        <img src="assets/img/photo.svg" alt="upload" class="quick-report__upload__icon">
+        <button class="no-margin-bottom btn__upload">Upload pictures</button>
+      </div>
+      <button class="btn btn__next">Submit</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="center-text no-margin-bottom footer__text">copyright &copy; all rights reserved</p>
+  </footer>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  <!-- ScriptS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.full.min.js'></script>
+
+  <script src="assets/plug-ins/js/fontawesome/all.js"></script>
+
+</body>
+
+</html>

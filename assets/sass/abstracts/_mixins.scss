@@ -1,0 +1,124 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin position {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin responsive-margin {
+  margin: 10px 20px;
+}
+
+@mixin margin {
+  margin: 10px 54px;
+}
+
+@mixin grid {
+  display: grid;
+}
+
+@mixin nav-font {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+// MEDIA QUERY MANAGER
+/*
+0 - 320px: Small Phone
+320px - 375px: Medium Phone
+375px - 384px: Nexus 4 Phone
+384x - 411px: Pixel 2 Phone
+411px - 414px: iphone 6/7/8 + Phone
+414px - 425px: Large Phone
+425px - 480px: Nexus 9 Phone
+480px - 640px: Microsoft Lumia 500 Phone
+640px - 768px: Tablet portrait mode
+768px - 800px: Fire HXD
+800px - 1024px: Tablet landscape
+1024 - 1280px: Small Laptop
+1280px - 1366px: Tablet Pro landscape
+1366px - 1440px: Laptop
+1400px - 2560px: Large latop
+2560px+ : 4k Desktop
+
+$breakpoint arguement choices:
+- s-phone
+- m-phone
+- nex-4
+- pix-2
+- l-phone
+- nex-9
+- mic-l
+- tab-port
+- f-hxd
+- tab-land
+- s-laptop
+- tab-pro-land
+- laptop
+- l-laptop
+- 4k-desk
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == s-phone {
+    @media (max-width: 20em) { @content }; // 320px in em 
+  }
+  @if $breakpoint == m-phone {
+    @media (max-width: 23.4375em) { @content }; // 375px in em //used
+  }
+  @if $breakpoint == nex-4 {
+    @media (max-width: 24em) { @content }; // 384px in em
+  }
+  @if $breakpoint == pix-2 {
+    @media (max-width: 25.6875em) { @content }; // 411px in em 
+  }
+  @if $breakpoint == iphone-6-plus {
+    @media (max-width: 25.875em) { @content }; // 414px in em
+  }
+  @if $breakpoint == l-phone {
+    @media (max-width: 26.5625em) { @content }; // 425px in em //used
+  }
+  @if $breakpoint == nex-9 {
+    @media (max-width: 30em) { @content }; // 480px in em
+  }
+  @if $breakpoint == mic-l {
+    @media (max-width: 40em) { @content }; // 640px in em //used
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 48em) { @content }; // 768px in em //used
+  }
+  @if $breakpoint == f-hxd {
+    @media (max-width: 50em) { @content }; // 800px in em  //used
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 64em) { @content }; // 1024px in em
+  }
+  @if $breakpoint == s-laptop { 
+    @media (max-width: 80em) { @content }; // 1280px in em
+  }
+  @if $breakpoint == tab-pro-land {
+    @media (max-width: 85.375em) { @content }; // 1366px in em 
+  }
+  @if $breakpoint == laptop {
+    @media (max-width: 90em) { @content }; // 1440px in em
+  }
+  @if $breakpoint == l-laptop {
+    @media (max-width: 160em) { @content }; // 2560px in em
+  }
+  @if $breakpoint == 4k-desk {
+    @media (min-width: 160em) { @content }; // 2560px in em
+  }
+}

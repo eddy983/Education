@@ -1,0 +1,87 @@
+.btn {
+  background-color: $color-primary;
+  border: none;
+  border-radius: 5px;
+  color: $color-white;
+  cursor: pointer;
+  outline: 0;
+
+  &:hover {
+    background-color: $color-secondary;
+    color: #fff;
+  }
+
+  &__nav {
+    padding: 1rem 1.5rem;
+  }
+
+  &__next {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 1.2rem;
+    width: 100%;
+
+    &--submit {
+      margin-top: 57%;
+    }
+  }
+
+  &__submit {
+    @include nav-font;
+
+    padding: 1rem;
+
+    @include respond(tab-port) {
+      font-size: 3rem;
+    }
+
+  }
+
+  &__carousel {
+    color: $color-white;
+    font-size: 3vh;
+    font-weight: 700;
+    padding: 1.2rem;
+
+    @include respond (tab-land){
+      font-size: 2vh;
+    }
+
+    &--champions {
+      background-color: transparent;
+      border: 2px solid $color-primary;
+      margin-left: 14px;
+
+      &:hover {
+        background-color: transparent;
+        border: 2px solid $color-secondary;
+      }
+    }
+  }
+
+  &__upload {
+    background-color: transparent;
+    border: none;
+    margin-left: 4px;
+    
+    &:hover {
+      color: $color-secondary;
+      text-decoration: underline;
+    }
+  }
+
+  &__champion {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3%; 
+    padding: 1rem 3rem;
+
+    @include respond (s-phone){
+      margin-bottom: 5%;
+    }
+  }
+
+}
+

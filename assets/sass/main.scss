@@ -1,0 +1,33 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/carousel";
+@import "components/facts";
+@import "components/line";
+@import "components/nav-bar";
+@import "components/navigation";
+@import "components/news-report";
+@import "components/pagination";
+@import "components/pop-up";
+@import "components/quick-report";
+@import "components/search";
+@import "components/tabs";
+@import "components/video";
+
+@import "layouts/about";
+@import "layouts/footer";
+@import "layouts/header";
+@import "layouts/reports";
+
+@import "pages/champions";
+@import "pages/home";
+@import "pages/report";
+@import "pages/view-report";
+

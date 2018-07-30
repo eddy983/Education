@@ -1,0 +1,44 @@
+.quick-report {
+  border: $border;
+  padding: 10px 20px;
+
+  @include respond(mic-l) {
+    margin-top: 1%;
+  }
+
+  &__input {
+    border: $border;
+    height: 3rem;
+    width: 100%;
+  }
+
+  &__dropdowns {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+
+    &--drop-down {
+      border: $border;
+      height: 3rem;
+      width: 100%;
+    }
+  }
+
+  &__text-area {
+    border: $border;
+    width: 100%;
+  }
+
+  &__upload {
+    display: inline-flex;
+    margin: 4% 0;
+
+    &__icon {
+      height: 3rem;
+    }
+  }
+}
+
+#Second-Div {
+  display: none;
+}

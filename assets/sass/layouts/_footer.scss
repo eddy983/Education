@@ -1,0 +1,23 @@
+.footer {
+  margin-top: 10%;
+
+  &--video {
+    margin-top: 0;
+  }
+
+  @include respond(l-phone) {
+    margin-top: 20%;
+  }
+
+  &__text {
+    background-color: #00253A;
+    color: $color-white;
+    font-size: 1.6rem;
+    padding: 2.2rem;
+    width: 100%; 
+
+    @include respond(l-phone) {
+      padding: 1.2rem;
+    }
+  }
+}

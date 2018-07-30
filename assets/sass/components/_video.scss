@@ -1,0 +1,44 @@
+.video {
+  background-color: #3d3d3d;
+  height: 100vh;
+
+  &__close {
+    position: relative;
+
+    &__img {
+      height: 4rem;
+      position: absolute;
+      top: 4rem;
+      left: 93%;
+      transform: translate(-50%, -50%);
+
+      @include respond(tab-land) {
+        height: 5rem;
+        top: 7rem;
+      }
+
+      @include respond(m-phone) {
+        height: 4rem; 
+      }
+
+      @include respond(s-phone) {
+        height: 3rem;
+      }
+    }
+  }
+
+  &__container {
+    height: 70vh;
+    margin-top: 6%;
+    width: 100%;
+
+    @include respond(tab-land) {
+      height: 60vh;
+      margin-top: 0;
+    }
+
+    @include respond(s-phone) {
+      height: 66vh;
+    }
+  }
+}

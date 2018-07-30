@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootsrtrap CDM -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/plug-ins/css/fontawesome/fontawesome.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open Sans:100,300,400,700,900" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <title>Education</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__responsive-nav">
+      <!-- overlay -->
+      <div id="search">
+        <a href="#" id="close-btn">
+          <em class="fa fa-times"></em>
+        </a>
+        <input placeholder="type here" id="searchbox" type="search" />
+      </div>
+      <!--- /overlay -->
+      <nav class="nav">
+        <a href="#">
+
+          <img src="assets/img/menu.svg" alt="" class="nav__burger">
+
+        </a>
+        <input type="checkbox" class="nav__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="nav__button">Men</label>
+
+        <div class="nav__background">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link nav-font">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="report.html" class="nav__link nav-font">Reports</a>
+            </li>
+            <li class="nav__item">
+              <a href="champions.html" class="nav__link nav-font">Champions</a>
+            </li>
+            <li class="nav__item">
+              <a href="#pop-up" class="btn btn__nav nav-font">Submit Report</a>
+            </li>
+
+        </div>
+
+        <!-- trigger search with a link to an anchor -->
+        <a class="fr nav__search-btn" href='#search'>
+          <em class="fa fa-search"></em>
+        </a>
+        <!-- /trigger search with a link to an anchor -->
+
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header__navi-bar">
+      <div class="navi-bar">
+        <ul class="navi-bar__list">
+          <li class="navi-bar__item">
+            <a href="index.html" class="navi-bar__name">Home</a>
+          </li>
+          <li class="navi-bar__item">
+            <a href="report.html" class="navi-bar__name">Reports</a>
+          </li>
+          <li class="navi-bar__item">
+            <a href="champions.html" class="navi-bar__name">Champions</a>
+          </li>
+          <li class="navi-bar__item navi-bar__item__submit">
+            <a href="#pop-up" class="btn btn__submit" class="navi-bar__item">Submit Report</a>
+          </li>
+          <li class="navi-bar__item navi-bar__item__search">
+            <div class="navi-bar__search">
+              <span class="fa fa-search navi-bar__search__icon"></span>
+              <input type="text" class="navi-bar__search__input" placeholder="Search" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="video">
+    <div class="video__close">
+      <a href="#"><img src="assets/img/cancel.svg" alt="close" class="video__close__img"></a>
+    </div>
+    <video class="video__container" autoplay muted loop>
+      <source src="assets/vids/Renovation.mp4" type="video/mp4"> Your Browser is not supported!!
+    </video>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer footer--video">
+    <p class="center-text no-margin-bottom footer__text">copyright &copy; all rights reserved</p>
+  </footer>
+
+  <!-- ScriptS -->
+  <script src="assets/js/main.js"></script>
+
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <script src="assets/plug-ins/js/fontawesome/all.js"></script>
+</body>
+
+</html>

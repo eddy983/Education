@@ -1,0 +1,38 @@
+.facts {
+  @include clearfix;
+
+  background-color: #D6CAB0;
+  margin: 10px 54px;
+  padding: 1.8rem;
+
+  @include respond(mic-l) {
+    @include responsive-margin;
+  }
+
+  &__responsive {
+    display: none;
+
+    @include respond(tab-port) {
+      display: block;
+    }
+  }
+  
+
+  &__quote{
+    
+    &-left {
+      float: left;
+    }
+
+    &-right {
+      float: right;
+    }
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    margin-top: 16px;
+    
+  }
+  
+}

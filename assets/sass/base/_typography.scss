@@ -1,0 +1,91 @@
+body {
+  color: $color-black;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.nav-font {
+  color: $color-white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.facts-font-title {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.facts-font-quote {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.news-report-font {
+  font-size: 2rem;
+}
+
+.other-report-font {
+  font-size: 1.4rem;
+}
+
+.quick-title {
+  font-size: 2.5rem;
+}
+
+.quick-font {
+  font-size: 1.8rem;
+}
+
+.quick-sub {
+  font-size: 1.2rem;
+}
+
+.report-title {
+  font-size: 2.4rem;
+}
+
+.report-font {
+  font-size: 1.6rem;
+}
+
+.pagination-font {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.news{
+  &-title {
+    font-size: 2.4rem;
+  }
+
+  &-sub {
+    font-size: 2rem;
+    
+    &--pictures {
+      color: $black-background-color;
+    }
+  }
+
+  &-name {
+    font-size: 1.8rem; 
+  }
+}
+
+.officials {
+  color: $color-white;
+  font-size: 1.3rem;
+  font-weight: 400;
+
+  &-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}
+

@@ -1,0 +1,206 @@
+.nav-bar {
+  //display: none;
+  @include clearfix;
+
+  position: absolute;
+  background-color: transparent;
+  padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+  width: 100%;
+  z-index: 5;
+
+  @include respond(tab-port) {
+    display: none;
+  }
+
+  &__index {
+    background-color: #fff;
+  }
+
+  &__list {
+    display: inline-flex;
+    float: right;
+
+    @include respond(tab-port) {
+      display: inherit;
+      float: none;
+      text-align: center;
+    }
+  }
+
+  &__item {
+    @include nav-font;
+
+    border-bottom: 0.4rem solid transparent;
+    height: 5rem;
+    list-style: none;
+    padding: 1rem 0.9rem;
+    text-decoration: none;
+
+    @include respond(tab-port) {
+      display: inline-block;
+      font-size: 3vh;
+    }
+
+    &:hover {
+      border-bottom: 0.4rem solid $color-secondary;
+      color: $color-white;
+      text-decoration: none;
+    }
+
+    &__submit {
+      padding: 0.7rem;
+
+      &:hover {
+        border-bottom: 0.4rem solid transparent;
+      }
+    }
+
+    &__search {
+      padding: 0.5rem;
+
+      &:hover {
+        border-bottom: 0.4rem solid transparent;
+      }
+    }
+  }
+
+  &__name {
+    &:hover {
+      color: $color-secondary;
+      text-decoration: none;
+    }
+  }
+
+  &__search {
+    position: relative;
+
+    &__icon {
+      color: #fff;
+      left: 93%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__input {
+      background-color: rgba(255, 255, 255, 0.32);
+      border: none;
+      border-radius: 4rem;
+      outline: 0;
+      padding: 0.9rem;
+      width: 324px;
+      color: #fff;
+
+      @include respond(tab-port) {
+        width: 170px;
+      }
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.navi-bar {
+  //display: none;
+  @include clearfix;
+
+  background-color: $color-black;
+  padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+
+  @include respond(tab-port) {
+    display: none;
+  }
+
+  &__index {
+    background-color: #fff;
+  }
+
+  &__list {
+    display: inline-flex;
+    float: right;
+
+    @include respond(tab-port) {
+      display: inherit;
+      float: none;
+      text-align: center;
+    }
+  }
+
+  &__item {
+    @include nav-font;
+
+    border-bottom: 0.4rem solid transparent;
+    height: 5rem;
+    list-style: none;
+    padding: 1rem 0.9rem;
+    text-decoration: none;
+
+    @include respond(tab-port) {
+      display: inline-block;
+      font-size: 3vh;
+    }
+
+    &:hover {
+      border-bottom: 0.4rem solid $color-secondary;
+    }
+
+    &__submit {
+      padding: 0.7rem;
+
+      &:hover {
+        border-bottom: 0.4rem solid transparent;
+      }
+    }
+
+    &__search {
+      padding: 0.5rem;
+
+      &:hover {
+        border-bottom: 0.4rem solid transparent;
+      }
+    }
+  }
+
+  &__name {
+    &:hover {
+      color: $color-secondary;
+      text-decoration: none;
+    }
+  }
+
+  &__search {
+    position: relative;
+
+    &__icon {
+      color: #fff;
+      left: 93%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__input {
+      background-color: rgba(255, 255, 255, 0.32);
+      border: none;
+      border-radius: 4rem;
+      outline: 0;
+      padding: 0.9rem;
+      width: 324px;
+      color: #fff;
+
+      @include respond(tab-port) {
+        width: 170px;
+      }
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}

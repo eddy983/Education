@@ -1,0 +1,29 @@
+.center-text { text-align: center; }
+
+.quick-margin { margin: 8% 0 0 0; }
+
+.no-margin-bottom { margin-bottom: 0; }
+
+.popup-margin { margin: 3% 0 0 0; }
+
+.report-title-margin { margin: 3% 0; }
+
+.report-margin { margin-top: 2.5%;}
+
+.report-text-margin { margin-bottom: 1%; }
+
+.share-margin { margin-bottom: 3%;}
+
+.other-margin { margin: 0 0 3% 0; }
+
+.other-paragraph-margin { margin: 3% 0 0 0; }
+
+.champions-title-margin { margin: 3% 0;}
+
+.champions-sub-margin { 
+  margin-bottom: 3%;
+  
+  @include respond (s-phone){
+    margin-bottom: 5%;
+  }
+}
