@@ -209,6 +209,8 @@ p {
     width: 100%; }
     .btn__next--submit {
       margin-top: 57%; }
+    .btn__next--champion {
+      margin-top: 7%; }
   .btn__submit {
     font-size: 2rem;
     font-weight: 700;
@@ -256,11 +258,14 @@ p {
 
 .carousel__text {
   color: whitesmoke;
-  font-size: 4vh;
+  font-size: 7vh;
   left: 46rem;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%); }
+  @media (max-width: 80em) {
+    .carousel__text {
+      font-size: 5vh; } }
   @media (max-width: 64em) {
     .carousel__text {
       font-size: 3vh; } }
@@ -606,7 +611,7 @@ a {
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: whitesmoke;
-    padding: 3%;
+    padding: 2%;
     width: 50%; }
     @media (max-width: 64em) {
       .pop-up__content {
@@ -618,9 +623,9 @@ a {
       .pop-up__content {
         width: 98%; } }
   .pop-up__close {
-    left: 97%;
+    left: 94%;
     position: absolute;
-    top: 3%;
+    top: 5%;
     transform: translate(-50%, -50%); }
     .pop-up__close__icon {
       color: #000;
@@ -648,8 +653,7 @@ a {
     border: 1px solid #000;
     width: 100%; }
   .quick-report__upload {
-    display: inline-flex;
-    margin: 4% 0; }
+    display: inline-flex; }
     .quick-report__upload__icon {
       height: 3rem; }
 
@@ -1018,6 +1022,11 @@ ul.tabs li.active {
       @media (max-width: 64em) {
         .view-report__image--main {
           height: 28vh; } }
+      .view-report__image--main--profile {
+        border-radius: 50%;
+        height: 100%;
+        margin-bottom: 4%;
+        width: 32%; }
     .view-report__image--officials {
       height: 20vh; }
       @media (max-width: 64em) {
@@ -1033,7 +1042,7 @@ ul.tabs li.active {
   .view-report__officials {
     display: grid;
     grid-gap: 3%;
-    grid-template-columns: repeat(auto-fit, minmax(272px, 1fr)); }
+    grid-template-columns: repeat(auto-fit, minmax(224px, 1fr)); }
     @media (max-width: 50em) {
       .view-report__officials {
         grid-template-columns: repeat(auto-fit, minmax(261px, 1fr)); } }

@@ -63,6 +63,13 @@
       @include respond(tab-land) {
         height: 28vh;
       }
+
+      &--profile {
+        border-radius: 50%;
+        height: 100%;
+        margin-bottom: 4%;
+        width: 32%;
+      }
     }
 
     &--officials {
@@ -89,7 +96,7 @@
   &__officials {
     display: grid;
     grid-gap: 3%;
-    grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
 
     @include respond(f-hxd) {
       grid-template-columns: repeat(auto-fit, minmax(261px, 1fr));

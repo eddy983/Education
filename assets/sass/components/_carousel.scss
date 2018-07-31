@@ -9,11 +9,15 @@
 
   &__text {
     color: $color-white;
-    font-size: 4vh;
+    font-size: 7vh;
     left: 46rem;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    @include respond(s-laptop) {
+     font-size: 5vh; 
+    }
 
     @include respond (tab-land){
       font-size: 3vh;
