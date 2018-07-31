@@ -104,7 +104,7 @@
 
     @include respond(l-phone) {
       grid-template-columns: repeat(auto-fit, minmax(121px, 1fr));
-    }
+    } 
 
     &__box {
       position: relative;
