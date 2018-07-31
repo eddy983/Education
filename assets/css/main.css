@@ -270,7 +270,8 @@ p {
     .carousel__text {
       font-size: 3vh; } }
   .carousel__text__inner {
-    display: block; }
+    display: block;
+    font-weight: 900; }
 
 .carousel__buttons {
   left: 46rem;
