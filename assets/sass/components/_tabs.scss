@@ -47,7 +47,7 @@ ul.tabs li.active {
 	width: 100%;
 	background: #fff;
   overflow: auto;
-	height: 52vh;
+	height: 93%;
 	
 	@include respond(tab-land) {
 		height: 25vh;

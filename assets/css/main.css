@@ -769,7 +769,7 @@ ul.tabs li.active {
   width: 100%;
   background: #fff;
   overflow: auto;
-  height: 52vh; }
+  height: 93%; }
   @media (max-width: 64em) {
     .tab_container {
       height: 25vh; } }
@@ -872,6 +872,9 @@ ul.tabs li.active {
       object-fit: cover;
       width: 100%; }
       @media (max-width: 40em) {
+        .about__video-v {
+          height: 80vh; } }
+      @media (max-width: 30em) {
         .about__video-v {
           height: 50vh; } }
     .about__video-play {

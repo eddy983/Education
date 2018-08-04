@@ -35,9 +35,18 @@
       object-fit: cover;
       width: 100%;
 
+
+
       @include respond(mic-l) {
+        height: 80vh;
+      }
+      
+      @include respond(nex-9) {
         height: 50vh;
       }
+      // @include respond(mic-l) {
+      //   height: 50vh;
+      // }
     }
 
     &-play {
