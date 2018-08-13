@@ -1,8 +1,10 @@
 .facts {
   @include clearfix;
 
-  background-color: #D6CAB0;
-  margin: 10px 54px;
+  @include margin;
+
+  background-color: #D6CAB0; 
+  //margin: 10px 54px;
   padding: 1.8rem;
 
   @include respond(mic-l) {
